@@ -1,4 +1,7 @@
 $('document').ready(function(){
+	$(window).load(function(){
+        $('.preloader').find('i').fadeOut().end().delay(400).fadeOut('slow');
+    });
 	$("#click").on('click',function(){
 		alert('suka');
 	});
