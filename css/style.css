@@ -204,9 +204,9 @@ section.about > .container > .about > .description{
 section.about > .container > .about > .buttons{
 	display: flex;
 	flex-wrap: wrap;
-
+	align-items: flex-start;
 }
-section.about > .container > .about > .buttons > .contact_me{
+section.about > .container > .about > .buttons > .services{
 	width: 150px;
 	display: flex;
 	justify-content: center;
@@ -216,7 +216,7 @@ section.about > .container > .about > .buttons > .contact_me{
 	font-weight: bold;
 	border-radius: 50px;
 	color: var(--black);
-	margin: 0 20px 0 0;
+	margin: 0 10px;
 	transition: 0.5s;
 	cursor: pointer;
 }
@@ -231,9 +231,10 @@ section.about > .container > .about > .buttons > .my_works{
 	color: var(--red);
 	border-radius: 50px;
 	transition: 0.5s;
+	margin: 0 10px;
 	cursor: pointer;
 }
-section.about > .container > .about > .buttons > .contact_me:hover{
+section.about > .container > .about > .buttons > .services:hover{
 	background-color: var(--black);
 	color: var(--color1);
 	border: 2px solid var(--black);

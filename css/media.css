@@ -35,3 +35,51 @@
     	width: 100%;
     }
 }
+@media screen and (max-width: 480px){
+    section.head > .container > .head > .title{
+        font-size: 3em;
+    }
+    section.head > .container > .head > .description{
+        font-size: 1em;
+        
+    }
+    section.about > .container > .about > .title, section.services > .container > .services > .title, section.works > .container > .works > .title{
+        font-size: 1.8em;
+    }
+    section.services > .container > .services > .block > .item > i{
+        font-size: 4.5em;
+        
+    }
+    section.about > .container > .about > .buttons{
+        justify-content: center;
+    }
+    section.about > .container > .about > .buttons > .services{
+        margin: 0 0 10px 0;
+    }
+    section.works > .container > .works > .block > .item {
+        width: 272px;
+        height: 215px;
+        margin: 5px;
+    }
+    section.works > .container > .works > .block > .item > .monitor {
+        width: 272px;
+        height: 196px;
+    }
+    section.works > .container > .works > .block > .item > img {
+        width: 260px;
+        height: 136px;
+        margin-top: 23px;
+    }
+    section.works > .container > .works > .block > .item > .content{
+
+    }
+    section.works > .container > .works > .block > .item > .content > .title{
+        font-size: 1em;
+    }
+    section.works > .container > .works > .block > .item > .content > .description{
+        font-size: 0.8em;
+    }
+    section.works > .container > .works > .block > .item > .content > a{
+        font-size: 0.7em;
+    }
+}
