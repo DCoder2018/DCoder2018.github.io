@@ -1,18 +1,21 @@
 @media screen and (max-width: 1024px){
-	section.head > .container > .head > .title{
+	.head__title{
     	font-size: 4em;
     }
-    section.head > .container > .head > .description{
+    .head__description{
     	font-size: 1.2em;
 	    
     }
-    section.about > .container > .about > .title, section.services > .container > .services > .title, section.works > .container > .works > .title{
+    .section__title{
     	font-size: 2.1em;
     }
-    section.services > .container > .services > .block > .item{
+    .services__item{
     	width: 200px;
     }
-    section.services > .container > .services > .block > .item > i{
+    .services__item__description{
+        font-size: 0.8em;
+    }
+    .services__item__icon{
     	font-size: 5em;
     	
     }
@@ -23,7 +26,7 @@
     	display: none;
     	margin: 0;
     }
-    .menu-item{
+    .menu__item{
     	margin: 15px auto;
     	display: block;
     	text-align: center;
@@ -31,55 +34,60 @@
     .header{
     	flex-direction: column;
     }
-    .header-left{
+    .header__left{
     	width: 100%;
     }
 }
 @media screen and (max-width: 480px){
-    section.head > .container > .head > .title{
+    .head__title{
         font-size: 3em;
     }
-    section.head > .container > .head > .description{
+    .head__description{
         font-size: 1em;
         
     }
-    section.about > .container > .about > .title, section.services > .container > .services > .title, section.works > .container > .works > .title{
+    .section__title{
         font-size: 1.8em;
     }
-    section.services > .container > .services > .block > .item > i{
+    .services__item{
+        max-width: 200px;
+        padding: 25px;
+    }
+    .services__item__icon{
         font-size: 4.5em;
         
     }
-    section.about > .container > .about > .buttons{
+    .about__buttons{
         justify-content: center;
     }
-    section.about > .container > .about > .buttons > .services{
+    .button__services{
         margin: 0 0 10px 0;
     }
-    section.works > .container > .works > .block > .item {
-        width: 272px;
-        height: 215px;
+    .works__item{
+        width: 238px;
+        height: 180px;
         margin: 5px;
     }
-    section.works > .container > .works > .block > .item > .monitor {
-        width: 272px;
-        height: 196px;
+    .works__img__monitor{
+        width: 238px;
+        height: 168px;
     }
-    section.works > .container > .works > .block > .item > img {
-        width: 260px;
-        height: 136px;
-        margin-top: 23px;
+    .works__img__work{
+        width: 227.5px;
+        height: 119px;
+        margin-top: 21px;
     }
-    section.works > .container > .works > .block > .item > .content{
-
+    .works__item__content{
+        width: 238px;
+        height: 168px;
     }
-    section.works > .container > .works > .block > .item > .content > .title{
+    .works__item__title{
         font-size: 1em;
     }
-    section.works > .container > .works > .block > .item > .content > .description{
+    .works__item__description{
         font-size: 0.8em;
     }
-    section.works > .container > .works > .block > .item > .content > a{
+    .button__work__view{
         font-size: 0.7em;
     }
 }

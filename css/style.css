@@ -23,6 +23,25 @@ body{
 	margin: 0 auto;
 	padding: 5px;
 }
+.section__title{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	font-size: 2.5em;
+	text-transform: uppercase;
+	font-weight: bold;
+}
+.section__p{
+	font-weight: bold;
+}
+.section__title:after{
+	content: '';
+    width: 60px;
+    height: 1px;
+    border: 1px solid var(--red);
+    background-color: var(--red);
+    margin: 7px 0;
+}
 .preloader {
     position: fixed;
     top: 0;
@@ -43,9 +62,9 @@ body{
     margin: -18px 0 0 -18px;
     border-radius: 50%;
     border: 2px solid;
-    border-top-color: rgba(34, 34, 34, 1);
+    border-top-color: rgb(255, 107, 107);
     border-bottom-color: rgba(0, 0, 0, 0.15);
-    border-left-color: rgba(34, 34, 34, 1);
+    border-left-color: rgb(255, 107, 107);
     border-right-color: rgba(0, 0, 0, 0.15);
     -webkit-animation: page-loader-circle 0.8s linear infinite;
     animation: page-loader-circle 0.8s linear infinite;
@@ -91,18 +110,15 @@ header{
 	align-items: center;
 	flex-direction: row;
 }
-.header-left{
+.header__left{
 	display: flex;
 }
-.logo{
+.header__logo{
 	font-weight: bold;
 	font-size: 1.5em;
 	color: var(--color1);
 	cursor: pointer;
 	padding: 0 0 2px 0;
-}
-nav{
-	margin: 0 0 0 auto;
 }
 .toggle{
 	font-size: 1.5em;
@@ -110,7 +126,16 @@ nav{
 	display: none;
 	margin: 0 0 0 auto;
 }
-.menu-item{
+nav{
+	margin: 0 0 0 auto;
+}
+ul.menu{
+	display: flex;
+}
+li.nav__li{
+	list-style-type: none;
+}
+.menu__item{
 	text-transform: uppercase;
 	font-weight: bold;
 	color: var(--color1);
@@ -120,7 +145,7 @@ nav{
 	cursor: pointer;
 	border-bottom: 2px solid transparent;
 }
-.menu-item:hover{
+.menu__item:hover{
 	color: #ff6b6b;
 	border-bottom: 2px solid var(--red);
 }
@@ -140,23 +165,23 @@ section.head{
 	height: 100vh;
 }
 
-section.head > .container > .head{
+.head__block{
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	text-align: center;
 }
-section.head > .container > .head > .title{
+.head__title{
 	font-size: 5em;
 	color: var(--color1);
 	margin-top: 100px;
 }
-section.head > .container > .head > .description{
+.head__description{
 	font-size: 1.5em;
 	margin: 5px 0 150px 0;
 	color: var(--color1);
 }
-section.head > .container > .head > .chevron{
+.head__arrow{
 	font-size: 2.5em;
 	color: var(--color1);
 	display: flex;
@@ -171,42 +196,23 @@ section.about{
 	background-color: var(--color1);
 	padding: 70px 0;
 }
-section.about > .container > .about{
+.about__block{
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 }
-section.about > .container > .about > .title{
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	font-size: 2.5em;
-	text-transform: uppercase;
-	font-weight: bold;
-}
-section.about > .container > .about > p{
-	font-weight: bold;
-}
-section.about > .container > .about > .title:after{
-	content: '';
-    width: 60px;
-    height: 1px;
-    border: 1px solid var(--red);
-    background-color: var(--red);
-    margin: 7px 0;
-}
-section.about > .container > .about > .description{
+.about__description{
 	line-height: 2;
 	max-width: 600px;
 	text-align: center;
 	margin: 35px 0;
 }
-section.about > .container > .about > .buttons{
+.about__buttons{
 	display: flex;
 	flex-wrap: wrap;
 	align-items: flex-start;
 }
-section.about > .container > .about > .buttons > .services{
+.button__services{
 	width: 150px;
 	display: flex;
 	justify-content: center;
@@ -220,7 +226,7 @@ section.about > .container > .about > .buttons > .services{
 	transition: 0.5s;
 	cursor: pointer;
 }
-section.about > .container > .about > .buttons > .my_works{
+.button__my_works{
 	width: 150px;
 	display: flex;
 	justify-content: center;
@@ -234,12 +240,12 @@ section.about > .container > .about > .buttons > .my_works{
 	margin: 0 10px;
 	cursor: pointer;
 }
-section.about > .container > .about > .buttons > .services:hover{
+.button__services:hover{
 	background-color: var(--black);
 	color: var(--color1);
 	border: 2px solid var(--black);
 }
- section.about > .container > .about > .buttons > .my_works:hover{
+.button__my_works:hover{
 	background-color: var(--red);
 	color: var(--color1);
 	border: 2px solid var(--red);
@@ -254,38 +260,19 @@ section.services{
 	padding: 70px 0 30px 0;
 	color: var(--color1);
 }
-section.services > .container > .services{
+.services__block{
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 }
-section.services > .container > .services > .title{
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	font-size: 2.5em;
-	text-transform: uppercase;
-	font-weight: bold;
-}
-section.services > .container > .services > p{
-	font-weight: bold;
-}
-section.services > .container > .services > .title:after{
-	content: '';
-    width: 60px;
-    height: 1px;
-    border: 1px solid var(--red);
-    background-color: var(--red);
-    margin: 7px 0;
-}
-section.services > .container > .services > .block{
+.services__content{
 	display: flex;
 	justify-content: center;
 	flex-wrap: wrap;
 	align-items: center;
 	margin: 35px 0;
 }
-section.services > .container > .services > .block > .item{
+.services__item{
 	width: 230px;
 	background-color: var(--black2);
 	display: flex;
@@ -297,16 +284,16 @@ section.services > .container > .services > .block > .item{
 	cursor: pointer;
 	transition: 0.5s;
 }
-section.services > .container > .services > .block > .item:hover{
+.services__item:hover{
 	background-color: var(--red);
 	
 }
-section.services > .container > .services > .block > .item > i{
+.services__item__icon{
 	font-size: 7em;
 	margin: 0 0 10px 0;
 }
-section.services > .container > .services > .block > .item > .description{
-	
+.services__item__description{
+	font-weight: bold;
 }
 
 
@@ -316,38 +303,19 @@ section.works{
 	background-color: var(--color1);
 	padding: 70px 0 30px 0;
 }
-section.works > .container > .works{
+.works__block{
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 }
-section.works > .container > .works > .title{
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	font-size: 2.5em;
-	text-transform: uppercase;
-	font-weight: bold;
-}
-section.works > .container > .works > p{
-	font-weight: bold;
-}
-section.works > .container > .works > .title:after{
-	content: '';
-    width: 60px;
-    height: 1px;
-    border: 1px solid var(--red);
-    background-color: var(--red);
-    margin: 7px 0;
-}
-section.works > .container > .works > .block{
+.works__content{
 	display: flex;
 	justify-content: center;
 	flex-wrap: wrap;
 	align-items: center;
 	margin: 15px 0;
 }
-section.works > .container > .works > .block > .item{
+.works__item{
 	margin: 12.5px;
     width: 340px;
     height: 265px;
@@ -358,18 +326,18 @@ section.works > .container > .works > .block > .item{
     display: flex;
     align-items: center;
 }
-section.works > .container > .works > .block > .item > .monitor{
+.works__img__monitor{
 	width: 340px;
     height: 240px;
     position: absolute;
     margin: 15px 0 0 0;
 }
-section.works > .container > .works > .block > .item > img{
+.works__img__work{
 	width: 325px;
     height: 170px;
     margin-top: 25px;
 }
-section.works > .container > .works > .block > .item > .content{
+.works__item__content{
 	display: flex;
     flex-direction: column;
     align-items: center;
@@ -383,14 +351,14 @@ section.works > .container > .works > .block > .item > .content{
     color: white;
     margin-top: 15px;
 }
-section.works > .container > .works > .block > .item > .content > .title{
+.works__item__title{
 	font-weight: bold;
 	font-size: 1.2em;
 }
-section.works > .container > .works > .block > .item > .content > .description{
+.works__item__description{
 	margin: 10px 0 30px 0;
 }
-section.works > .container > .works > .block > .item > .content > a{
+.button__work__view{
     display: flex;
     justify-content: center;
     color: var(--red);
@@ -401,11 +369,11 @@ section.works > .container > .works > .block > .item > .content > a{
 	padding: 5px;
 	transition: 0.5s;
 }
-section.works > .container > .works > .block > .item > .content > a:hover{
+.button__work__view:hover{
     background-color: var(--red);
     color: var(--color1);
 }
-section.works > .container > .works > .block > .item:hover .content {
+.works__item:hover .works__item__content{
   opacity: 1;
 }
 
@@ -417,30 +385,29 @@ footer{
 	color: var(--color1);
 	padding: 15px 0;
 }
-footer > .container > .footer{
+.footer{
 	align-items: center;
 	display: flex;
 }
-footer > .container > .footer > .copyright{
-	font-size: 1.2em;
+.copyright{
 	font-weight: 800;
 	color: var(--color1);
 	cursor: pointer;
 	transition: 0.5s;
 }
-footer > .container > .footer > .copyright:hover{
+.copyright:hover{
 	color: var(--red);
 }
-footer > .container > .footer > .socials{
+.socials__icons{
 	display: flex;
 	margin: 0 0 0 auto;
 }
-footer > .container > .footer > .socials > a{
+.social__page{
 	font-size: 1.7em;
 	margin: 0 0 0 10px;
 	color: var(--color1);
 	transition: 0.5s;
 }
-footer > .container > .footer > .socials > a:hover{
+.social__page:hover{
 	color: var(--red);
 }

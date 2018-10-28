@@ -22,70 +22,72 @@
 	<header>
 		<div class="container">
 			<div class="header">
-				<div class="header-left">
-			        <a href="#" class="logo">The Darks</a>
+				<div class="header__left">
+			        <a href="#" class="header__logo">The Darks</a>
 			        <div class="toggle"><i class="fas fa-bars"></i></div>
 			    </div>
 			    <nav>
-				    <a href="#head" class="menu-item m">home</a>
-				    <a href="#about" class="menu-item m">about us</a>
-				    <a href="#services" class="menu-item m">our services</a>
-			    	<a href="#works" class="menu-item m">our works</a>
+			    	<ul class="menu">
+			    		<li class="nav__li"><a href="#head" class="menu__item m">home</a></li>
+				        <li class="nav__li"><a href="#about" class="menu__item m">about us</a></li>
+				        <li class="nav__li"><a href="#services" class="menu__item m">our services</a></li>
+			        	<li class="nav__li"><a href="#works" class="menu__item m">our works</a></li>
+			    	</ul>
 			    </nav>
 			</div>
 		</div>
 	</header>
 	<section class="head" id="head">
 		<div class="container">
-			<div class="head">
-				<h1 class="title">The Darks</h1>
-				<p class="description">Creation of sites, programs and web applications</p>
-				<a href="#about" class="chevron m"><i class="fas fa-chevron-down"></i></a>
+			<div class="head__block">
+				<h1 class="head__title">The Darks</h1>
+				<p class="head__description">Creation of sites, programs and web applications</p>
+				<a href="#about" class="head__arrow m"><i class="fas fa-chevron-down"></i></a>
 			</div>
 		</div>
 	</section>
 	<section class="about" id="about">
 		<div class="container">
-			<div class="about">
-				<div class="title">about us</div>
-				<p>Let's get to know each other</p>
-				<div class="description">The Darks is a team of programmers who create websites, programs and web applications. We have been working since 2017. Not having a lot of experience, we are doing great projects. We do everything efficiently, quickly and clearly.</br>Your dream is our job!</div>
-				<div class="buttons">
-					<a href="#services" class="services m">our services</a>
-				    <a href="#works" class="my_works m">our works</a>
+			<div class="about__block">
+				<div class="section__title">about us</div>
+				<p class="section__p">Let's get to know each other</p>
+				<div class="about__description">The Darks is a team of programmers who create websites, programs and web applications. We have been working since 2017. Not having a lot of experience, we are doing great projects. We do everything efficiently, quickly and clearly.</br>Your dream is our job!</div>
+				<div class="about__buttons">
+					<a href="#services" class="button__services m">our services</a>
+				    <a href="#works" class="button__my_works m">our works</a>
 				</div>
 			</div>
 		</div>
 	</section>
 	<section class="services" id="services">
 		<div class="container">
-			<div class="services">
-				<div class="title">our services</div>
-				<p>What services do we offer?</p>
-				<div class="block">
-					<div class="item">
-						<i class="fas fa-rocket"></i>
-						<div class="description">SEO optimization</div>
+			<div class="services__block">
+				<div class="section__title">our services</div>
+				<p class="section__p">What services do we offer?</p>
+				<div class="services__content">
+					<div class="services__item">
+						<i class="fas fa-rocket services__item__icon"></i>
+						<div class="services__item__description">SEO optimization</div>
 					</div>
-					<div class="item">
-						<i class="fas fa-mobile-alt"></i>
-						<div class="description">Creation of mobile applications</div>
+					<div class="services__item">
+						<i class="fas fa-mobile-alt services__item__icon"></i>
+						<div class="services__item__description">Creation of mobile applications</div>
 					</div>
-					<div class="item">
-						<i class="fab fa-html5"></i>
-						<div class="description">Web site creation</div>
+					<div class="services__item">
+						<i class="fab fa-html5 services__item__icon"></i>
+						<div class="services__item__description">Web site creation</div>
 					</div>
-					<div class="item">
-						<i class="fas fa-paint-brush"></i>
-						<div class="description">Creating a site design</div>
+					<div class="services__item">
+						<i class="fas fa-paint-brush services__item__icon"></i>
+						<div class="services__item__description">Creating a site design</div>
 					</div>
-					<div class="item">
-						<i class="fas fa-cogs"></i>
-						<div class="description">Server-side programming</div>
+					<div class="services__item">
+						<i class="fas fa-cogs services__item__icon"></i>
+						<div class="services__item__description">Server-side programming</div>
 					</div>
-					<div class="item">
-						<i class="fas fa-wrench"></i>
-						<div class="description">Rework your project</div>
+					<div class="services__item">
+						<i class="fas fa-wrench services__item__icon"></i>
+						<div class="services__item__description">Rework your project</div>
 					</div>
 
 				</div>
@@ -94,89 +96,89 @@
 	</section>
 	<section class="works" id="works">
 		<div class="container">
-			<div class="works">
-				<div class="title">our works</div>
-				<p>Most recent work orders</p>
-				<div class="block">
-					<div class="item">
-						<img src="img/monitor.png" class="monitor">
-						<img src="https://viktor-web.ru/wp-content/uploads/2017/05/2017-05-15_12-08-02.png">
-						<div class="content">
-							<div class="title">Microsoft Corp.</div>
-							<div class="description">Microsoft company website</div>
-							<a href="">view</a>
+			<div class="works__block">
+				<div class="section__title">our works</div>
+				<p class="section__p">Most recent work orders</p>
+				<div class="works__content">
+					<div class="works__item">
+						<img src="img/monitor.png" class="works__img__monitor">
+						<img src="https://viktor-web.ru/wp-content/uploads/2017/05/2017-05-15_12-08-02.png" class="works__img__work">
+						<div class="works__item__content">
+							<div class="works__item__title">Microsoft Corp.</div>
+							<div class="works__item__description">Microsoft company website</div>
+							<a href="#" class="button__work__view">view</a>
 						</div>
 					</div>
-					<div class="item">
-						<img src="img/monitor.png" class="monitor">
-						<img src="https://viktor-web.ru/wp-content/uploads/2017/05/2017-05-15_12-08-02.png">
-						<div class="content">
-							<div class="title">Microsoft Corp.</div>
-							<div class="description">Microsoft company website</div>
-							<a href="">view</a>
+					<div class="works__item">
+						<img src="img/monitor.png" class="works__img__monitor">
+						<img src="https://viktor-web.ru/wp-content/uploads/2017/05/2017-05-15_12-08-02.png" class="works__img__work">
+						<div class="works__item__content">
+							<div class="works__item__title">Microsoft Corp.</div>
+							<div class="works__item__description">Microsoft company website</div>
+							<a href="#" class="button__work__view">view</a>
 						</div>
 					</div>
-					<div class="item">
-						<img src="img/monitor.png" class="monitor">
-						<img src="https://viktor-web.ru/wp-content/uploads/2017/05/2017-05-15_12-08-02.png">
-						<div class="content">
-							<div class="title">Microsoft Corp.</div>
-							<div class="description">Microsoft company website</div>
-							<a href="">view</a>
+					<div class="works__item">
+						<img src="img/monitor.png" class="works__img__monitor">
+						<img src="https://viktor-web.ru/wp-content/uploads/2017/05/2017-05-15_12-08-02.png" class="works__img__work">
+						<div class="works__item__content">
+							<div class="works__item__title">Microsoft Corp.</div>
+							<div class="works__item__description">Microsoft company website</div>
+							<a href="#" class="button__work__view">view</a>
 						</div>
 					</div>
-					<div class="item">
-						<img src="img/monitor.png" class="monitor">
-						<img src="https://viktor-web.ru/wp-content/uploads/2017/05/2017-05-15_12-08-02.png">
-						<div class="content">
-							<div class="title">Microsoft Corp.</div>
-							<div class="description">Microsoft company website</div>
-							<a href="">view</a>
+					<div class="works__item">
+						<img src="img/monitor.png" class="works__img__monitor">
+						<img src="https://viktor-web.ru/wp-content/uploads/2017/05/2017-05-15_12-08-02.png" class="works__img__work">
+						<div class="works__item__content">
+							<div class="works__item__title">Microsoft Corp.</div>
+							<div class="works__item__description">Microsoft company website</div>
+							<a href="#" class="button__work__view">view</a>
 						</div>
 					</div>
-					<div class="item">
-						<img src="img/monitor.png" class="monitor">
-						<img src="https://viktor-web.ru/wp-content/uploads/2017/05/2017-05-15_12-08-02.png">
-						<div class="content">
-							<div class="title">Microsoft Corp.</div>
-							<div class="description">Microsoft company website</div>
-							<a href="">view</a>
+					<div class="works__item">
+						<img src="img/monitor.png" class="works__img__monitor">
+						<img src="https://viktor-web.ru/wp-content/uploads/2017/05/2017-05-15_12-08-02.png" class="works__img__work">
+						<div class="works__item__content">
+							<div class="works__item__title">Microsoft Corp.</div>
+							<div class="works__item__description">Microsoft company website</div>
+							<a href="#" class="button__work__view">view</a>
 						</div>
 					</div>
-					<div class="item">
-						<img src="img/monitor.png" class="monitor">
-						<img src="https://viktor-web.ru/wp-content/uploads/2017/05/2017-05-15_12-08-02.png">
-						<div class="content">
-							<div class="title">Microsoft Corp.</div>
-							<div class="description">Microsoft company website</div>
-							<a href="">view</a>
+					<div class="works__item">
+						<img src="img/monitor.png" class="works__img__monitor">
+						<img src="https://viktor-web.ru/wp-content/uploads/2017/05/2017-05-15_12-08-02.png" class="works__img__work">
+						<div class="works__item__content">
+							<div class="works__item__title">Microsoft Corp.</div>
+							<div class="works__item__description">Microsoft company website</div>
+							<a href="#" class="button__work__view">view</a>
 						</div>
 					</div>
-					<div class="item">
-						<img src="img/monitor.png" class="monitor">
-						<img src="https://viktor-web.ru/wp-content/uploads/2017/05/2017-05-15_12-08-02.png">
-						<div class="content">
-							<div class="title">Microsoft Corp.</div>
-							<div class="description">Microsoft company website</div>
-							<a href="">view</a>
+					<div class="works__item">
+						<img src="img/monitor.png" class="works__img__monitor">
+						<img src="https://viktor-web.ru/wp-content/uploads/2017/05/2017-05-15_12-08-02.png" class="works__img__work">
+						<div class="works__item__content">
+							<div class="works__item__title">Microsoft Corp.</div>
+							<div class="works__item__description">Microsoft company website</div>
+							<a href="#" class="button__work__view">view</a>
 						</div>
 					</div>
-					<div class="item">
-						<img src="img/monitor.png" class="monitor">
-						<img src="https://viktor-web.ru/wp-content/uploads/2017/05/2017-05-15_12-08-02.png">
-						<div class="content">
-							<div class="title">Microsoft Corp.</div>
-							<div class="description">Microsoft company website</div>
-							<a href="">view</a>
+					<div class="works__item">
+						<img src="img/monitor.png" class="works__img__monitor">
+						<img src="https://viktor-web.ru/wp-content/uploads/2017/05/2017-05-15_12-08-02.png" class="works__img__work">
+						<div class="works__item__content">
+							<div class="works__item__title">Microsoft Corp.</div>
+							<div class="works__item__description">Microsoft company website</div>
+							<a href="#" class="button__work__view">view</a>
 						</div>
 					</div>
-					<div class="item">
-						<img src="img/monitor.png" class="monitor">
-						<img src="https://viktor-web.ru/wp-content/uploads/2017/05/2017-05-15_12-08-02.png">
-						<div class="content">
-							<div class="title">Microsoft Corp.</div>
-							<div class="description">Microsoft company website</div>
-							<a href="">view</a>
+					<div class="works__item">
+						<img src="img/monitor.png" class="works__img__monitor">
+						<img src="https://viktor-web.ru/wp-content/uploads/2017/05/2017-05-15_12-08-02.png" class="works__img__work">
+						<div class="works__item__content">
+							<div class="works__item__title">Microsoft Corp.</div>
+							<div class="works__item__description">Microsoft company website</div>
+							<a href="#" class="button__work__view">view</a>
 						</div>
 					</div>
 				</div>
@@ -187,11 +189,11 @@
 		<div class="container">
 			<div class="footer">
 				<a href="#" class="copyright">© The Darks 2018</a>
-				<div class="socials">
-					<a href="#" class="fb"><i class="fab fa-facebook-square"></i></a>
-					<a href="#" class="tw"><i class="fab fa-twitter-square"></i></a>
-					<a href="#" class="gh"><i class="fab fa-github-square"></i></a>
-					<a href="#" class="ig"><i class="fab fa-instagram"></i></a>
+				<div class="socials__icons">
+					<a href="#" class="social__page"><i class="fab fa-facebook-square"></i></a>
+					<a href="#" class="social__page"><i class="fab fa-twitter-square"></i></a>
+					<a href="#" class="social__page"><i class="fab fa-github-square"></i></a>
+					<a href="#" class="social__page"><i class="fab fa-instagram"></i></a>
 				</div>
 			</div>
 		</div>
