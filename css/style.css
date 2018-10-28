@@ -203,6 +203,7 @@ section.about > .container > .about > .description{
 }
 section.about > .container > .about > .buttons{
 	display: flex;
+	flex-wrap: wrap;
 
 }
 section.about > .container > .about > .buttons > .contact_me{
