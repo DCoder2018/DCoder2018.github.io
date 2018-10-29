@@ -26,6 +26,10 @@
     	display: none;
     	margin: 0;
     }
+    ul.menu{
+        flex-direction: column;
+        align-items: center;
+    }
     .menu__item{
     	margin: 15px auto;
     	display: block;
